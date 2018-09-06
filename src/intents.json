@@ -1,0 +1,111 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sports trivia",
+            "intents": [
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "Answer",
+                            "type": "LIST_OF_ANSWERS"
+                        }
+                    ],
+                    "samples": [
+                        "the answer is {Answer}",
+                        "my answer is {Answer}",
+                        "is it {Answer}",
+                        "{Answer} is my answer",
+                        "{Answer}"
+                    ]
+                },
+                {
+                    "name": "AnswerOnlyIntent",
+                    "slots": [
+                        {
+                            "name": "Answer",
+                            "type": "LIST_OF_ANSWERS"
+                        }
+                    ],
+                    "samples": [
+                        "{Answer}"
+                    ]
+                },
+                {
+                    "name": "DontKnowIntent",
+                    "slots": [],
+                    "samples": [
+                        "i don't know",
+                        "don't know",
+                        "skip",
+                        "i don't know that",
+                        "who knows",
+                        "i don't know this question",
+                        "i don't know that one",
+                        "dunno"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": [
+                        "start game",
+                        "new game",
+                        "start",
+                        "start new game"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_ANSWERS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "4"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
